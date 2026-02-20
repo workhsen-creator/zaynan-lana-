@@ -222,5 +222,99 @@
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective Date: [Insert Date]",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": [
+          "Welcome to Zaynan Lana.",
+          "We respect your privacy and are committed to protecting any personal information you may provide while using our website.",
+          "This Privacy Policy explains how we collect, use, and safeguard your information.",
+          "This website operates from Lebanon."
+        ]
+      },
+      {
+        "title": "2. Information We Collect",
+        "content": [
+          "We may collect the following information when you use our website:",
+          "A. Information You Provide Voluntarily",
+          "When you submit a contact form, we may collect:",
+          "Your name",
+          "Your email address",
+          "Your message",
+          "We do not store this information in a database. It is used only to respond to your inquiry.",
+          "B. Automatically Collected Information",
+          "When you visit our website, certain data may be collected automatically, including:",
+          "IP address",
+          "Browser type",
+          "Device information",
+          "Pages visited",
+          "Time and date of visit",
+          "This data helps us understand how visitors use our website."
+        ]
+      },
+      {
+        "title": "3. Use of Google Analytics",
+        "content": [
+          "We use Google Analytics to analyze website traffic and improve our services.",
+          "Google Analytics may collect:",
+          "IP address",
+          "Device and browser information",
+          "Website usage data",
+          "This information is processed according to Google’s privacy policies.",
+          "You can opt out of Google Analytics tracking by using the Google Analytics Opt-out Browser Add-on."
+        ]
+      },
+      {
+        "title": "4. How We Use Your Information",
+        "content": [
+          "We use collected information to:",
+          "Respond to contact inquiries",
+          "Improve website performance",
+          "Monitor traffic and usage trends",
+          "Ensure website security",
+          "We do not sell, trade, or rent your personal information."
+        ]
+      },
+      {
+        "title": "5. Data Protection",
+        "content": [
+          "We take reasonable technical and organizational measures to protect your information from unauthorized access, misuse, or disclosure.",
+          "However, no method of transmission over the internet is 100% secure."
+        ]
+      },
+      {
+        "title": "6. Third-Party Services",
+        "content": [
+          "Our website may use third-party services (such as hosting providers and analytics tools) that may process data on our behalf.",
+          "These providers have their own privacy policies."
+        ]
+      },
+      {
+        "title": "7. Your Rights",
+        "content": [
+          "Depending on your location, you may have the right to:",
+          "Request access to your personal data",
+          "Request correction or deletion of your data",
+          "Object to certain types of data processing",
+          "To exercise these rights, please contact us through the website."
+        ]
+      },
+      {
+        "title": "8. Changes to This Policy",
+        "content": [
+          "We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised effective date."
+        ]
+      },
+      {
+        "title": "9. Contact Us",
+        "content": [
+          "If you have any questions about this Privacy Policy, please contact us through the website contact form."
+        ]
+      }
+    ]
   }
 }

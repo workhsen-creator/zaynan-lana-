@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'framer-motion';
 import AnimatedBackground from './components/AnimatedBackground';
@@ -11,9 +11,19 @@ import Testimonials from './sections/Testimonials';
 import Brands from './sections/Brands';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
-
+import PrivacyPolicy from './pages/PrivacyPolicy';
 const App: React.FC = () => {
     const { i18n } = useTranslation();
+    const [currentView, setCurrentView] = useState(() => window.location.hash === '#privacy-policy' ? 'privacy' : 'home');
+
+    useEffect(() => {
+        const handleHashChange = () => {
+            setCurrentView(window.location.hash === '#privacy-policy' ? 'privacy' : 'home');
+            window.scrollTo(0, 0);
+        };
+        window.addEventListener('hashchange', handleHashChange);
+        return () => window.removeEventListener('hashchange', handleHashChange);
+    }, []);
 
     useEffect(() => {
         const dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
@@ -33,13 +43,19 @@ const App: React.FC = () => {
                 <AnimatedBackground />
                 <Navbar />
                 <main>
-                    <Hero />
-                    <About />
-                    <Vision />
-                    <Services />
-                    <Testimonials />
-                    <Brands />
-                    <Contact />
+                    {currentView === 'home' ? (
+                        <>
+                            <Hero />
+                            <About />
+                            <Vision />
+                            <Services />
+                            <Testimonials />
+                            <Brands />
+                            <Contact />
+                        </>
+                    ) : (
+                        <PrivacyPolicy />
+                    )}
                 </main>
                 <Footer />
             </motion.div>

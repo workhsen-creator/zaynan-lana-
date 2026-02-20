@@ -29,6 +29,16 @@ const Navbar: React.FC = () => {
 
     const handleNavClick = (href: string) => {
         setMobileOpen(false);
+
+        if (window.location.hash === '#privacy-policy' && href !== '#privacy-policy') {
+            window.location.hash = href;
+            setTimeout(() => {
+                const el = document.querySelector(href);
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+            return;
+        }
+
         const el = document.querySelector(href);
         if (el) {
             el.scrollIntoView({ behavior: 'smooth' });

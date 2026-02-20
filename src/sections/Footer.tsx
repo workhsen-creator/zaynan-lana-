@@ -69,6 +69,10 @@ const Footer: React.FC = () => {
                 <div className="footer__bottom">
                     <p className="footer__copyright">
                         © {new Date().getFullYear()} Zaynon Lana. {t('footer.rights')}
+                        <span style={{ margin: '0 10px', opacity: 0.5 }}>|</span>
+                        <a href="#privacy-policy" style={{ color: 'inherit', textDecoration: 'none', transition: 'opacity 0.3s' }} className="footer__privacy-link">
+                            {t('privacy.title', 'Privacy Policy')}
+                        </a>
                     </p>
                 </div>
             </div>
