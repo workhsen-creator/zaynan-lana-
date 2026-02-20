@@ -20,7 +20,6 @@ const PrivacyPolicy: React.FC = () => {
                     className="privacy-policy__content"
                 >
                     <h1 className="privacy-policy__title">{t('privacy.title')}</h1>
-                    <p className="privacy-policy__date">{t('privacy.effectiveDate')}</p>
 
                     <div className="privacy-policy__body">
                         {Array.isArray(sections) && sections.map((section, index) => (
