@@ -1,0 +1,340 @@
+/* ============================
+   About — Cinematic Manifesto
+   ============================ */
+
+/* ---- Root container ---- */
+.about-cinema {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cinema__layers {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================================
+   BACKGROUND DEPTH LAYERS
+   ============================================================ */
+
+/* Radial glow */
+.about-cinema__glow {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 900px;
+    height: 900px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse,
+            rgba(196, 156, 121, 0.08) 0%,
+            rgba(196, 156, 121, 0.035) 40%,
+            transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(50px);
+}
+
+/* Large faint background word */
+.about-cinema__bg-word {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(7rem, 20vw, 18rem);
+    font-weight: 800;
+    color: var(--color-secondary);
+    opacity: 0.04;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    letter-spacing: 0.06em;
+    line-height: 1;
+}
+
+[dir="rtl"] .about-cinema__bg-word {
+    letter-spacing: 0;
+}
+
+/* Blur gradient overlay — adds atmospheric depth */
+.about-cinema__blur-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(15, 30, 33, 0.15) 40%,
+            rgba(15, 30, 33, 0.25) 60%,
+            transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ============================================================
+   ZONE 1 — HERO HEADLINE
+   ============================================================ */
+.about-cinema__hero {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    margin-bottom: var(--space-24);
+}
+
+/* Section label */
+.about-cinema__label {
+    display: block;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-8);
+}
+
+[dir="rtl"] .about-cinema__label {
+    letter-spacing: 0.08em;
+}
+
+/* Headline */
+.about-cinema__headline {
+    font-size: clamp(var(--fs-4xl), 6vw, var(--fs-6xl));
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-6);
+}
+
+[dir="rtl"] .about-cinema__headline {
+    letter-spacing: 0;
+}
+
+/* Word-by-word pieces */
+.about-cinema__word-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3em;
+}
+
+[dir="rtl"] .about-cinema__word-wrap {
+    direction: rtl;
+}
+
+.about-cinema__word {
+    display: inline-block;
+    will-change: transform, opacity;
+}
+
+/* Expanding gold underline */
+.about-cinema__underline {
+    width: 80px;
+    height: 2px;
+    margin: 0 auto var(--space-10);
+    background: linear-gradient(90deg,
+            transparent,
+            var(--color-secondary),
+            transparent);
+    transform-origin: center;
+}
+
+/* Intro paragraph */
+.about-cinema__intro {
+    font-size: var(--fs-lg);
+    color: var(--color-text-muted);
+    line-height: 1.85;
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* ============================================================
+   ZONE 2 — SPLIT LAYOUT
+   ============================================================ */
+.about-cinema__split {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    align-items: start;
+}
+
+[dir="rtl"] .about-cinema__split {
+    direction: rtl;
+}
+
+/* ── Left side: vertical line + manifesto ── */
+.about-cinema__left {
+    position: relative;
+    padding-left: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 240px;
+}
+
+[dir="rtl"] .about-cinema__left {
+    padding-left: 0;
+    padding-right: var(--space-8);
+}
+
+/* Vertical gold accent line */
+.about-cinema__vline {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            var(--color-secondary) 20%,
+            var(--color-secondary) 80%,
+            transparent 100%);
+    transform-origin: top center;
+    opacity: 0.6;
+}
+
+[dir="rtl"] .about-cinema__vline {
+    left: auto;
+    right: 0;
+}
+
+/* Manifesto sentence */
+.about-cinema__manifesto {
+    font-size: clamp(var(--fs-xl), 2.8vw, var(--fs-3xl));
+    font-weight: 600;
+    color: var(--color-secondary);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+[dir="rtl"] .about-cinema__manifesto {
+    letter-spacing: 0;
+}
+
+/* ── Right side: supporting paragraphs ── */
+.about-cinema__right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    padding-top: var(--space-2);
+}
+
+.about-cinema__para {
+    font-size: var(--fs-base);
+    color: var(--color-text-muted);
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+/* ============================================================
+   CLOSING STATEMENT
+   ============================================================ */
+.about-cinema__closing {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: var(--space-24);
+    padding: 0 var(--space-6);
+}
+
+.about-cinema__closing-lead {
+    font-size: var(--fs-lg);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: var(--space-3);
+}
+
+[dir="rtl"] .about-cinema__closing-lead {
+    font-style: normal;
+}
+
+.about-cinema__closing-emphasis {
+    font-size: clamp(var(--fs-3xl), 5vw, var(--fs-5xl));
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+[dir="rtl"] .about-cinema__closing-emphasis {
+    letter-spacing: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+    .about-cinema__split {
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+    }
+
+    .about-cinema__left {
+        min-height: auto;
+        padding-bottom: var(--space-8);
+    }
+
+    .about-cinema__hero {
+        margin-bottom: var(--space-16);
+    }
+
+    .about-cinema__closing {
+        margin-top: var(--space-16);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cinema__glow {
+        width: 550px;
+        height: 550px;
+    }
+
+    .about-cinema__bg-word {
+        font-size: clamp(4rem, 22vw, 9rem);
+        opacity: 0.03;
+    }
+
+    .about-cinema__hero {
+        padding: 0 var(--space-4);
+        margin-bottom: var(--space-12);
+    }
+
+    .about-cinema__split {
+        padding: 0 var(--space-4);
+    }
+
+    .about-cinema__left {
+        padding-left: var(--space-5);
+    }
+
+    [dir="rtl"] .about-cinema__left {
+        padding-left: 0;
+        padding-right: var(--space-5);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-cinema__headline {
+        font-size: var(--fs-3xl);
+    }
+
+    .about-cinema__manifesto {
+        font-size: var(--fs-xl);
+    }
+
+    .about-cinema__underline {
+        width: 56px;
+    }
+
+    .about-cinema__closing {
+        margin-top: var(--space-12);
+    }
+}

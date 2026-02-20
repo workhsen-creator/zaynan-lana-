@@ -1,0 +1,272 @@
+/* ============================
+   Contact — Premium Glassmorphism
+   ============================ */
+
+/* ---- Section root ---- */
+.contact-premium {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ---- Background glow ---- */
+.contact-premium__glow {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse,
+            rgba(196, 156, 121, 0.08) 0%,
+            rgba(196, 156, 121, 0.03) 40%,
+            transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(60px);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.contact-premium__header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: var(--space-16);
+}
+
+.contact-premium__label {
+    display: block;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-4);
+}
+
+[dir="rtl"] .contact-premium__label {
+    letter-spacing: 0.08em;
+}
+
+.contact-premium__title {
+    font-size: clamp(var(--fs-3xl), 5vw, var(--fs-5xl));
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-4);
+}
+
+[dir="rtl"] .contact-premium__title {
+    letter-spacing: 0;
+}
+
+/* Gold underline */
+.contact-premium__underline {
+    width: 64px;
+    height: 2px;
+    margin: 0 auto var(--space-6);
+    background: linear-gradient(90deg,
+            transparent,
+            var(--color-secondary),
+            transparent);
+    transform-origin: center;
+}
+
+.contact-premium__subtitle {
+    font-size: var(--fs-lg);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* ============================================================
+   CARDS GRID
+   ============================================================ */
+.contact-premium__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+[dir="rtl"] .contact-premium__grid {
+    direction: rtl;
+}
+
+/* ============================================================
+   GLASSMORPHISM CARD
+   ============================================================ */
+.contact-card {
+    position: relative;
+    padding: var(--space-8) var(--space-6);
+    border-radius: 18px;
+    text-align: center;
+    cursor: default;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+
+    /* Glass effect */
+    background: rgba(31, 62, 67, 0.3);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(196, 156, 121, 0.12);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.04),
+        0 4px 24px rgba(0, 0, 0, 0.15);
+
+    /* Floating animation */
+    animation: contact-float 6s ease-in-out infinite;
+}
+
+.contact-card:nth-child(2) {
+    animation-delay: -1.5s;
+}
+
+.contact-card:nth-child(3) {
+    animation-delay: -3s;
+}
+
+.contact-card:nth-child(4) {
+    animation-delay: -4.5s;
+}
+
+@keyframes contact-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Hover */
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(196, 156, 121, 0.35);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        0 8px 40px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(196, 156, 121, 0.12);
+    animation-play-state: paused;
+}
+
+/* ---- Icon ---- */
+.contact-card__icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto var(--space-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(196, 156, 121, 0.1);
+    border: 1px solid rgba(196, 156, 121, 0.2);
+    transition: box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.contact-card:hover .contact-card__icon {
+    box-shadow: 0 0 18px rgba(196, 156, 121, 0.25);
+    background: rgba(196, 156, 121, 0.15);
+}
+
+.contact-card__svg {
+    width: 22px;
+    height: 22px;
+    color: var(--color-secondary);
+    transition: transform 0.4s ease;
+}
+
+/* Phone pulse */
+.contact-card__svg--phone {
+    animation: phone-pulse 3s ease-in-out infinite;
+}
+
+@keyframes phone-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+/* Globe hover rotation */
+.contact-card:hover .contact-card__svg--globe {
+    transform: rotate(20deg);
+}
+
+/* ---- Label ---- */
+.contact-card__label {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--color-text);
+    margin-bottom: var(--space-4);
+}
+
+[dir="rtl"] .contact-card__label {
+    letter-spacing: 0.06em;
+}
+
+/* ---- Content ---- */
+.contact-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.contact-card__line {
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.contact-card__link {
+    font-size: var(--fs-sm);
+    color: var(--color-secondary);
+    line-height: 1.7;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card__link:hover {
+    color: var(--color-secondary-light);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .contact-premium__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-premium__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+        max-width: 400px;
+    }
+
+    .contact-premium__header {
+        margin-bottom: var(--space-10);
+    }
+
+    .contact-card {
+        padding: var(--space-6) var(--space-5);
+    }
+}

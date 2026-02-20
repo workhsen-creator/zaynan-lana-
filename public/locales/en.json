@@ -1,0 +1,226 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "vision": "Vision",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "brands": "Brands",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Amplifying Faith Through Strategic Storytelling",
+    "subheadline": "We partner with religious institutions and faith-based brands to craft meaningful narratives that resonate, inspire, and endure.",
+    "cta": "Start Your Journey"
+  },
+  "about": {
+    "sectionLabel": "About Us",
+    "title": "Built for One Clear Purpose",
+    "intro": "Zaynan Lana is a content-driven marketing and production company built for one clear purpose:",
+    "purpose": "To serve brands, entities, and initiatives working in religious and faith-based content.",
+    "p1": "We are not a general agency. We are a specialized partner that understands the sensitivity, depth, and responsibility behind this type of content — whether it's educational, spiritual, awareness-driven, or community-focused.",
+    "p2": "Our work blends strategy, creativity, and technology to produce meaningful content that connects with people emotionally and culturally.",
+    "p3": "From storytelling to production, from campaigns to data — we handle the full journey under one roof.",
+    "closingLead": "Because for us… content in this field is not just marketing.",
+    "closingEmphasis": "It's impact."
+  },
+  "vision": {
+    "sectionLabel": "Our Vision",
+    "statement": "To become the leading content and production partner in the religious and faith-based industry across the region.",
+    "description": "We believe religious content deserves the same level of creativity, innovation, and professionalism as any global industry — while preserving its values, message, and authenticity.",
+    "pillars": [
+      {
+        "title": "Storytelling",
+        "desc": "Premium narratives that inspire and connect."
+      },
+      {
+        "title": "Purposeful Campaigns",
+        "desc": "Strategic messaging aligned with values."
+      },
+      {
+        "title": "Advanced Production",
+        "desc": "Cinematic quality for every project."
+      },
+      {
+        "title": "Ethical Marketing",
+        "desc": "Responsible practices built on trust."
+      },
+      {
+        "title": "Smart Distribution",
+        "desc": "Technology-driven reach across platforms."
+      },
+      {
+        "title": "Faith-First Vision",
+        "desc": "Authenticity at the core of everything."
+      }
+    ],
+    "motto1": "Excellence without compromise.",
+    "motto2": "Integrity without dilution."
+  },
+  "services": {
+    "sectionLabel": "Our Services",
+    "title": "What We Do",
+    "nicheIntro": "All our services are designed specifically for one niche:",
+    "niche": "Religious & Faith-Based Content Industry",
+    "items": [
+      {
+        "key": "marketing",
+        "title": "Marketing & PR",
+        "description": "We build communication strategies that strengthen reputation, trust, and audience connection.",
+        "services": [
+          "Brand positioning",
+          "Campaign planning",
+          "Public relations",
+          "Media outreach",
+          "Reputation management"
+        ]
+      },
+      {
+        "key": "production",
+        "title": "Full Production",
+        "description": "From idea to final delivery — we produce high-quality visual content.",
+        "services": [
+          "Documentary production",
+          "Program filming",
+          "Podcast & talk shows",
+          "Social media series",
+          "Religious events coverage"
+        ]
+      },
+      {
+        "key": "events",
+        "title": "Event Organization",
+        "description": "We plan and manage impactful events that reflect purpose and professionalism.",
+        "services": [
+          "Religious conferences",
+          "Community initiatives",
+          "Awareness campaigns",
+          "Launch events",
+          "Spiritual gatherings"
+        ]
+      },
+      {
+        "key": "ai",
+        "title": "AI Production & Creation",
+        "description": "We integrate AI to scale content creation while maintaining authenticity.",
+        "services": [
+          "AI video production",
+          "AI visuals & designs",
+          "Automated content generation",
+          "Smart editing workflows"
+        ]
+      },
+      {
+        "key": "copywriting",
+        "title": "Copywriting & Content Protection",
+        "description": "We craft meaningful messaging with ethical and cultural sensitivity.",
+        "services": [
+          "Scriptwriting",
+          "Speech writing",
+          "Educational content",
+          "Campaign messaging",
+          "Content copyright protection",
+          "Intellectual property safeguarding"
+        ]
+      },
+      {
+        "key": "distribution",
+        "title": "Content Distribution",
+        "description": "Creating content is not enough — we make sure it reaches the right audience.",
+        "services": [
+          "Platform publishing",
+          "Multi-channel distribution",
+          "Community targeting",
+          "Audience segmentation"
+        ]
+      },
+      {
+        "key": "performance",
+        "title": "Performance Marketing",
+        "description": "We run data-driven campaigns that maximize reach and engagement.",
+        "services": [
+          "Paid ads management",
+          "Campaign optimization",
+          "Conversion tracking",
+          "Awareness scaling"
+        ]
+      },
+      {
+        "key": "data",
+        "title": "Data Analysis & Digital Transformation",
+        "description": "We help entities evolve digitally through insights and systems.",
+        "services": [
+          "Audience analytics",
+          "Campaign performance reports",
+          "Data dashboards",
+          "Digital infrastructure setup"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "You can place client quotes here — sample text below",
+    "items": [
+      {
+        "quote": "Zaynan Lana helped us transform our message into impactful content that reached thousands.",
+        "name": "Client Name",
+        "role": "Position, Organization"
+      },
+      {
+        "quote": "Professional, respectful to our values, and highly creative in execution.",
+        "name": "Client Name",
+        "role": "Position, Organization"
+      },
+      {
+        "quote": "They understand our niche better than any agency we worked with.",
+        "name": "Client Name",
+        "role": "Position, Organization"
+      }
+    ]
+  },
+  "brands": {
+    "sectionLabel": "Our Clients",
+    "title": "Trusted by Leading Faith-Driven Organizations",
+    "subtitle": "Here you can showcase logos of:",
+    "categories": [
+      "Religious channels",
+      "Foundations",
+      "NGOs",
+      "Educational platforms",
+      "Community initiatives"
+    ]
+  },
+  "contact": {
+    "sectionLabel": "Contact Us",
+    "title": "Contact Us",
+    "subtitle": "Let's create meaningful impact together.",
+    "locations": {
+      "label": "LOCATIONS",
+      "items": [
+        "Lebanon",
+        "Iraq",
+        "Saudi Arabia"
+      ]
+    },
+    "phone": {
+      "label": "PHONE",
+      "value": "+XXX XXX XXX"
+    },
+    "email": {
+      "label": "EMAIL",
+      "value": "info@zaynonlana.com"
+    },
+    "website": {
+      "label": "WEBSITE",
+      "value": "www.zaynonlana.com"
+    }
+  },
+  "footer": {
+    "tagline": "Elevating faith-based communication through strategic storytelling and cinematic craft.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,107 @@
+.footer {
+    padding: var(--space-16) 0 var(--space-8);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-primary-dark);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-10);
+    margin-bottom: var(--space-12);
+}
+
+[dir="rtl"] .footer__grid {
+    direction: rtl;
+}
+
+.footer__logo {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: 0.12em;
+    display: block;
+    margin-bottom: var(--space-4);
+}
+
+[dir="rtl"] .footer__logo {
+    letter-spacing: 0.04em;
+}
+
+.footer__tagline {
+    font-size: var(--fs-sm);
+    color: var(--color-text-dim);
+    line-height: 1.7;
+    max-width: 320px;
+}
+
+.footer__heading {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-5);
+}
+
+[dir="rtl"] .footer__heading {
+    letter-spacing: 0.02em;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.footer__link {
+    font-size: var(--fs-sm);
+    color: var(--color-text-dim);
+    transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+    color: var(--color-secondary);
+}
+
+.footer__social-icons {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.footer__social-link {
+    color: var(--color-text-dim);
+    transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.footer__social-link:hover {
+    color: var(--color-secondary);
+    border-color: var(--color-border-hover);
+    background: rgba(196, 156, 121, 0.06);
+}
+
+.footer__bottom {
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: var(--fs-sm);
+    color: var(--color-text-dim);
+}
+
+@media (max-width: 768px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+}
